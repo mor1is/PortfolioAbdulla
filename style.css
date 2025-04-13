@@ -196,13 +196,6 @@ html {
     min-width: 250px; 
 }
 
-.project {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .zoomed-in {
     transform: scale(1.5);
     z-index: 100;
@@ -251,13 +244,12 @@ html {
 .canvas-frame {
     border: 12px double #f0f0f0;
     background: #1f1f1f;
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 400px;
+    height: auto;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease;
-    padding: 5px;
-    box-sizing: border-box;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    position: relative;
 }
 
 .canvas-frame img {
